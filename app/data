@@ -1,0 +1,12 @@
+recipe_begin	[mk_soulshot_d]	20	level=2	material={{[soul_ore];3};{[crystal_d];1}}	catalyst={}	product={{[soulshot_d];156}}	npc_fee={{[rp_soulshot_d];1};{[adena];200}}	mp_consume=40	success_rate=100	item_id=1804	iscommonrecipe=0	recipe_end
+recipe_begin	[mk_soulshot_c]	21	level=4	material={{[soul_ore];15};{[crystal_c];1}}	catalyst={}	product={{[soulshot_c];476}}	npc_fee={{[rp_soulshot_c];1};{[adena];900}}	mp_consume=70	success_rate=100	item_id=1805	iscommonrecipe=0	recipe_end
+recipe_begin	[mk_soulshot_b]	22	level=6	material={{[soul_ore];54};{[crystal_b];1}}	catalyst={}	product={{[soulshot_b];450}}	npc_fee={{[rp_soulshot_b];1};{[adena];3000}}	mp_consume=100	success_rate=100	item_id=1806	iscommonrecipe=0	recipe_end
+recipe_begin	[mk_soulshot_a]	23	level=7	material={{[soul_ore];36};{[crystal_a];1}}	catalyst={}	product={{[soulshot_a];300}}	npc_fee={{[rp_soulshot_a];1};{[adena];4800}}	mp_consume=120	success_rate=100	item_id=1807	iscommonrecipe=0	recipe_end
+recipe_begin	[mk_soulshot_s]	24	level=8	material={{[soul_ore];40};{[crystal_s];1}}	catalyst={}	product={{[soulshot_s];350}}	npc_fee={}	mp_consume=150	success_rate=100	item_id=1808	iscommonrecipe=0	recipe_end
+
+
+recipe_begin	[mk_blessed_spiritshot_d]	323	level=2	material={{[spirit_ore];8};{[crystal_d];2}}	catalyst={}	product={{[blessed_spiritshot_d];100}}	npc_fee={{[rp_blessed_spiritshot_d];1};{[adena];900}}	mp_consume=60	success_rate=100	item_id=3953	iscommonrecipe=0	recipe_end
+recipe_begin	[mk_blessed_spiritshot_c]	324	level=4	material={{[spirit_ore];30};{[crystal_c];2}}	catalyst={}	product={{[blessed_spiritshot_c];200}}	npc_fee={{[rp_blessed_spiritshot_c];1};{[adena];3600}}	mp_consume=120	success_rate=100	item_id=3954	iscommonrecipe=0	recipe_end
+recipe_begin	[mk_blessed_spiritshot_b]	325	level=6	material={{[spirit_ore];16};{[crystal_b];2}}	catalyst={}	product={{[blessed_spiritshot_b];100}}	npc_fee={{[rp_blessed_spiritshot_b];1};{[adena];4900}}	mp_consume=180	success_rate=100	item_id=3955	iscommonrecipe=0	recipe_end
+recipe_begin	[mk_blessed_spiritshot_a]	326	level=7	material={{[spirit_ore];70};{[crystal_a];2}}	catalyst={}	product={{[blessed_spiritshot_a];200}}	npc_fee={{[rp_blessed_spiritshot_a];1};{[adena];11600}}	mp_consume=240	success_rate=100	item_id=3956	iscommonrecipe=0	recipe_end
+recipe_begin	[mk_blessed_spiritshot_s]	327	level=8	material={{[spirit_ore];50};{[crystal_s];2}}	catalyst={}	product={{[blessed_spiritshot_s];200}}	npc_fee={{[rp_blessed_spiritshot_s];1};{[adena];14000}}	mp_consume=300	success_rate=100	item_id=3957	iscommonrecipe=0	recipe_end

@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2 class="mb-4">Self Price Calculation</h2>
+<form method="post">
+    {{ form.hidden_tag() }}
+    {{ form.csrf_token }}
+    <div class="mb-3">
+        {{ form.grade.label(class="form-label") }}
+        {{ form.grade(class="form-control") }}
+    </div>
+    <div class="mb-3">
+        {{ form.item_price.label(class="form-label") }}
+        {{ form.item_price(class="form-control") }}
+    </div>
+    <div class="mb-3">
+        {{ form.cry_amount.label(class="form-label") }}
+        {{ form.cry_amount(class="form-control") }}
+    </div>
+    <button type="submit" class="btn btn-primary">Calculate</button>
+</form>
+{% if result %}
+<div class="mt-4">
+    <p>Result:</p>
+    <p>Cost of 1 Crystal: {{ result[0] }}</p>
+    <p>Cost of 1 SS{{ form.grade.data }}: {{ result[1] }}</p>
+    <p>Cost of 1 BSS{{ form.grade.data }}: {{ result[2] }}</p>
+</div>
+{% endif %}
+{% endblock %}

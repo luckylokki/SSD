@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h2>Blessed Spirit Shot Calculation</h2>
+  <form method="post" action="{{ url_for('blessed_spirit_shot_route') }}">
+    {{ form.hidden_tag() }}
+      {{ form.csrf_token }}
+    <label for="grade">Тип грейда :</label>
+    {{ form.grade(class="form-control", id="grade") }}
+    <br>
+    <label for="cry">Количество кристаллов:</label>
+    {{ form.cry(class="form-control", id="cry") }}
+    <br>
+    <input type="submit" value="Рассчитать">
+  </form>
+
+  {% if result %}
+    <p>Результат:</p>
+    <p>У вас {{ form.cry.data }} кристал(ов) {{ form.grade.data }} грейда</p>
+    <p>Вам нужно {{ result[0] }} SpiritOre</p>
+    <p>Вы получите {{ result[1] }} Blessed Spirit Shot {{ form.grade.data }}</p>
+  {% else %}
+    {% if form.errors %}
+      <p style="color: red;">{{ form.errors }}</p>
+    {% endif %}
+  {% endif %}
+{% endblock %}
