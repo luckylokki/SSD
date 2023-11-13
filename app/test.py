@@ -3,12 +3,12 @@ def calculate_self_price(grade: str, item_price: int, cry_amount: int):
     spo = 440
     one_cry_price = item_price // cry_amount
 
-    grade_factors = {'D': (3, 8), 'C': (15, 30), 'B': (54, 16), 'A': (36, 70), 'S': (40, 50)}
+    grade_factors = {'D': (3, 8, 156, 100), 'C': (15, 30, 476, 200), 'B': (54, 16, 450, 100), 'A': (36, 70, 300, 200), 'S': (40, 50, 350, 100)}
 
     if (grade := grade.upper()) in grade_factors:
-        s, b = grade_factors[grade]
-        ssd = (so * s + one_cry_price) // 156
-        bssd = (spo * b + one_cry_price * 2) // 100
+        s, b, sg, bg = grade_factors[grade]
+        ssd = (so * s + one_cry_price) // sg
+        bssd = (spo * b + one_cry_price * 2) // bg
         return one_cry_price, ssd, bssd
     else:
         return print('Неверный ввод.\n')
