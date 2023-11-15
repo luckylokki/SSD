@@ -48,25 +48,25 @@ def SoulShot(grade: str, cry: int):
         # C GRADE
     elif str(grade).upper() == "C":
         for c in range(cry):
-            ss += 156
+            ss += 476
             nsocry = socryc * cry
         return nsocry, ss
         # B GRADE
     elif str(grade).upper() == "B":
         for c in range(cry):
-            ss += 156
+            ss += 450
             nsocry = socryb * cry
         return nsocry, ss
         # A GRADE
     elif str(grade).upper() == "A":
         for c in range(cry):
-            ss += 156
+            ss += 300
             nsocry = socrya * cry
         return nsocry, ss
         # S GRADE
     elif str(grade).upper() == "S":
         for c in range(cry):
-            ss += 156
+            ss += 350
             nsocry = socrys * cry
         return nsocry,ss
     else:
@@ -90,7 +90,7 @@ def BlessedSpiritShot(grade: str, cry: int):
         # C GRADE
     elif str(grade).upper() == "C":
         for c in range(cry // 2):
-            bss += 100
+            bss += 200
             nsod = cry // 2 * spoc
         return nsod, bss
         # B GRADE
@@ -102,7 +102,7 @@ def BlessedSpiritShot(grade: str, cry: int):
         # A GRADE
     elif str(grade).upper() == "A":
         for c in range(cry // 2):
-            bss += 100
+            bss += 200
             nsod = cry // 2 * spoa
         return nsod, bss
         # S GRADE
